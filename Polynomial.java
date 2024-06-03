@@ -73,7 +73,7 @@ public class Polynomial{
 	}
 	public Polynomial multiply(Polynomial p) {
 		if(coefficients == null || p.coefficients == null)return new Polynomial();
-		double [] c = new double [1000];
+		double [] c = new double [100000];
 		int terms = 0;
 		for(int i= 0;i< coefficients.length;i++) {
 			for(int j= 0;j< p.coefficients.length;j++) {
